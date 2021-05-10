@@ -323,7 +323,7 @@ export function init() {
           context.vrMode = status === "sessionStarted";
           if (context.vrMode) {
             gotoRoom(0);
-            context.cameraRig.position.set(0, 0, 2);
+            context.cameraRig.position.set(8, 0, -2);
             context.goto = null;
           } else {
             slideshow.setup(context);
