@@ -315,7 +315,7 @@ export function init() {
        */
       rooms[context.room].enter(context);
 
-      slideshow.setup(context);
+      // slideshow.setup(context);
 
       document.body.appendChild(renderer.domElement);
       document.body.appendChild(
@@ -326,7 +326,7 @@ export function init() {
             context.cameraRig.position.set(8, 0, -2);
             context.goto = null;
           } else {
-            slideshow.setup(context);
+            // slideshow.setup(context);
           }
         })
       );
@@ -437,7 +437,7 @@ function animate() {
   context.raycontrol.execute(context, delta, elapsedTime);
   rooms[context.room].execute(context, delta, elapsedTime);
   if (!context.vrMode) {
-    slideshow.execute(context, delta, elapsedTime);
+    // slideshow.execute(context, delta, elapsedTime);
   }
 
   renderer.render(scene, camera);
